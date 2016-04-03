@@ -1,0 +1,28 @@
+{
+  "name": "fluffy",
+  "version": "0.1.0",
+  "description": "A tool to monitor the OpenAQ platform fetch tasks.",
+  "repository": "https://github.com/openaq/fluffy",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint && ava",
+    "start": "node index.js",
+    "docker": "docker-compose --project openaq run --rm fluffy"
+  },
+  "author": "Joe Flasher",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.5.2",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "nodemailer": "^2.3.0",
+    "request": "^2.58.0"
+  },
+  "devDependencies": {
+    "ava": "^0.13.0",
+    "eslint": "^2.4.0",
+    "eslint-config-standard": "^5.1.0",
+    "eslint-plugin-promise": "^1.1.0",
+    "eslint-plugin-standard": "^1.3.2"
+  }
+}
