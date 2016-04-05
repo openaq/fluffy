@@ -14,7 +14,7 @@ import { parallel } from 'async';
 const baseURL = process.env.BASE_URL || 'https://api.openaq.org/v1/';
 const diffThreshold = process.env.DIFF_THRESHOLD || 20;
 
-request.get(`${baseURL}fetches?limit=1`, (err, res, body) => {
+request.get(`${baseURL}fetches?limit=1&t=${Date.now()}`, (err, res, body) => {
   if (err) {
     sendSlack('<!channel> Hmm, I was not even able to get the latest fetch data, no good.', () => {
       process.exit(0);
