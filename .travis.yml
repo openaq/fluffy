@@ -1,4 +1,3 @@
-sudo: true
 language: node_js
 node_js:
 - '4.0'
@@ -7,15 +6,12 @@ env:
   - STAGING_BRANCH=develop
   - PRODUCTION_BRANCH=master
 cache:
-  apt: true
   directories:
-  - "$HOME/docker"
-services:
-- docker
+    - node_modules
 before_install:
 - chmod +x ./.build_scripts/deploy.sh
-install: echo no local install needed, testing on Docker
-script: touch local.env && docker-compose --project openaq run fluffy npm test
+- wget https://github.com/apex/apex/releases/download/v0.10.2/apex_linux_amd64 -O ./apex
+- chmod +x ./apex
 deploy:
   - provider: script
     skip_cleanup: true

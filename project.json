@@ -1,0 +1,8 @@
+{
+  "name": "fluffy",
+  "description": "A tool to monitor the OpenAQ platform fetch tasks.",
+  "memory": 128,
+  "timeout": 30,
+  "role": "arn:aws:iam::470049585876:role/fluffy_lambda_function",
+  "environment": {}
+}
