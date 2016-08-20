@@ -5,6 +5,9 @@ env:
   global:
   - STAGING_BRANCH=develop
   - PRODUCTION_BRANCH=master
+cache:
+  directories:
+    - node_modules
 before_install:
 - chmod +x ./.build_scripts/deploy.sh
 - wget https://github.com/apex/apex/releases/download/v0.10.2/apex_linux_amd64 -O ./apex
