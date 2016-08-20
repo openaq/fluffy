@@ -1,0 +1,7 @@
+{
+  "handler": "main.handle",
+  "hooks": {
+    "build": "../../node_modules/.bin/browserify --global-transform ../../node_modules/es2040 --node --exclude aws-sdk --standalone handle --outfile main.js index.js",
+    "clean": "rm main.js"
+  }
+}

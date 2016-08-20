@@ -1,0 +1,8 @@
+{
+  "SMTP_USERNAME": "AKIAIH42LD6SSEV7I3SQ",
+  "SMTP_PASSWORD": "AvhUW+X0f68iY2e0o3o9UXfvY9sssX+PDBwOnRUnc7OP",
+  "SMTP_SERVER": "email-smtp.us-east-1.amazonaws.com",
+  "SLACK_WEBHOOK_URL": "https://hooks.slack.com/services/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",
+  "SMTP_TO_ADDRESSES": "info@openaq.org",
+  "DIFF_THRESHOLD": "40"
+}
