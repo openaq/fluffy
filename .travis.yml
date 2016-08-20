@@ -10,8 +10,8 @@ cache:
     - node_modules
 before_install:
 - pip install --user awscli
-- wget https://github.com/apex/apex/releases/download/v0.10.2/apex_linux_amd64 -O .local/bin/apex
-- chmod +x .local/bin/apex
+- wget https://github.com/apex/apex/releases/download/v0.10.2/apex_linux_amd64 -O $HOME/.local/bin/apex
+- chmod +x $HOME/.local/bin/apex
 - export PATH=$PATH:$HOME/.local/bin
 - chmod +x ./.build_scripts/deploy.sh
 deploy:
